@@ -3,47 +3,59 @@
 <html lang="pt-br">
 <head>
 
+    <title>KITANDA DO VITOR</title>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/Style.css">
 
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="fundo">
 
-        <img class="imagFundo" src="./src/Imagem/mercado do vitor.png" alt="Desine de fundo">
-
+        <img class="imagFundo" src="./src/Imagem/triangulo-reto (1).png" alt="Desine de fundo">
+        <img class="imagCima" src="./src/Imagem/triangulo-reto-cima.png" alt="Desine de fundo">
     </div>
 
-
-    <header>
-        <a >
+    <header class="cabecalho">
+        <a href="./src/Html/carrinho.html">
             <!-- o objetivo aqui é fazer com que quando a pessoa faça compras o carrinho fique
             cheio e quand ela não efetuou a compra o carrinho fica vazio-->
-            <img class="carrinho vazio" src="sem caminho" alt="carrinho de compras">
+            <img class="carrinhoVazio" src="./src/Imagem/carrinho-de-compras-de-design-xadrez.png" alt="carrinho de compras">
 
                 <!-- se (pesquisa no banco de dados pelos produtos de compra == não efetuada compra 
                     porem produtos no carrinho para possivel compra){
                     imagem de carrinho cheio.setVisible()
                     }else{imagem de carrinho vasio.setVisible}
                 -->
-
         </a>
         <nav>
             <ul class="botoes-menu">
+                
                 <li> <a href="./src/Html/paginaVendas.html"> PREÇOS </a></li>
+                
                 <li> <a href="./src/Html/login.html">  ENTRE </a></li>
+                
             </ul>
         </nav>
-
     </header>
+    
+    <!--<hr size= 2px color= "#000000"> -->
 
-
-
+    <center>
+        <p class="nome">
+            KITANDA DO VITOR
+        </p>
+    </center>
+    
 
 <!--
 
@@ -66,11 +78,5 @@ receitas (futuro bem futuro)
 
  -->
 
-
-
-    
 </body>
 </html>
-
-
-
