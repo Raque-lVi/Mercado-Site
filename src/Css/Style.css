@@ -44,7 +44,10 @@ body{
     transition: 0.8s all ease-in-out;/*animação sinha*/
 }
 
-
+.fundo{
+    z-index: -1;
+    position: absolute;
+}
 
 .fundo .imagFundo{
 
