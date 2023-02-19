@@ -1,0 +1,76 @@
+body{
+    font-family:'Cardo', serif;
+    overflow-x: hidden;
+    /*
+    quando criar para baixo coloque
+    overflow-y: scroll;
+    */
+}
+
+.cabecalho{
+
+    display: flex;
+    padding: 10px 30px 10px 30px;
+    /*altura  , direita, baixo , esquerda*/
+    justify-content: space-between;
+}
+
+.cabecalho .carrinhoVazio{
+    width: 50px;
+}
+
+.cabecalho .botoes-menu{
+
+    display: flex; 
+    align-items: center;
+    height: 100%;
+}
+.cabecalho nav ul li a{
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: rgb(17, 207, 17);
+    color: #ffffff;
+    font-size: 19px; /*tamanho da letra*/
+    border-radius: 50px; /*aredondar bordas*/
+    
+}
+
+.cabecalho nav ul li a:hover{
+
+    background-color: #ffffff;
+    color: rgb(19, 119, 19);
+    cursor: pointer;/*maosinha ao se aprosimar do botao*/
+    transform: scale(1.1);
+    transition: 0.8s all ease-in-out;/*animação sinha*/
+}
+
+.fundo{
+    
+    z-index: -1;
+    position: absolute;
+}
+
+.fundo .imagFundo{
+
+    position: absolute; 
+	left: 0px; /* posiciona a 90px para a esquerda */ 
+	top: calc( 100px - 25px); /* posiciona a 70px para baixo */
+
+    width: calc( 100vh - 80px); /*vh = tela do usuario*/
+    
+}
+.fundo .imagCima{
+
+    position: absolute ; 
+    left: 750px;
+	top: 0px; /* posiciona a 70px para baixo */
+
+    width: calc( 100vh - 80px); /*vh = tela do usuario*/
+    
+}
+.nome {
+    padding: 200px 0px 0px 0px;
+    /*altura  , direita, baixo , esquerda*/
+    font-size: 60px; /*tamanho da letra*/
+
+}
