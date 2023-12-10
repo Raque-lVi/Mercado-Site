@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+        <head>
+            <title>LOGIN</title>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            <link rel="stylesheet" href="./src/Css/reset.css">
+            <link rel="stylesheet" href="./src/Css/Style.css">
+            <link rel="stylesheet" href="./src/Css/StyleLogin.css">
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+
+        </head>
+        <body>
+
+            <header class="cabecalho">
+
+                    
+                <a href="./src/Imagem/carrinho-de-compras-de-design-xadrez.png">
+                
+                    <!-- o objetivo aqui é fazer com que quando a pessoa faça compras o carrinho fique
+                    cheio e quand ela não efetuou a compra o carrinho fica vazio-->
+                    <img class="carrinhoVazio" src="./src/Imagem/carrinho-de-compras-de-design-xadrez.png" alt="carrinho de compras">
+
+                    <!-- se (pesquisa no banco de dados pelos produtos de compra == não efetuada compra 
+                        porem produtos no carrinho para possivel compra){
+                        imagem de carrinho cheio.setVisible()
+                        }else{imagem de carrinho vasio.setVisible}
+                    -->
+                </a>
+
+                <nav>
+                    <ul class="botoes-menu">
+                        
+                        <li> <a href="./src/Html/paginaVendas.html"> PREÇOS </a></li>
+                        
+                        <li> <a href="./src/Html/index.html">  HOME </a></li>
+                        
+                    </ul>
+                </nav>
+            </header>
+ 
+
+            <!--
+
+                <input type="text">	Exibe um campo de entrada de texto de linha única
+                <input type="radio">	Exibe um botão de opção (para selecionar uma das muitas opções)
+                <input type="checkbox">	Exibe uma caixa de seleção (para selecionar zero ou mais de muitas opções)
+                <input type="submit">	Exibe um botão de envio (para enviar o formulário)
+                <input type="button">   Exibe um botão clicável
+
+            -->
+        </br></br></br></br>
+            <center>
+            <form action="./src/php/Login.php" method="post" class="formulario">
+                <legend class="labAutent">AUTENTICAÇÃO</legend>
+            </br></br>
+                <label for="fname" >Login:</label>
+                <input type="text" name="loginText" id="loginText" class="Text">
+                </br></br>
+                <label for="fname" >Senha:</label>
+                <input type="password" name="senhaText" id="senhaText" class="Text">
+                </br></br>
+                <input type="submit" name=" Enviar " class="botao">
+            </form>
+            </center>
+        </body>
+    </html>

@@ -1,5 +1,23 @@
+
+:root{
+    --cor_principal: rgb(196, 43, 43);
+    --cor_basic: rgb(216, 255, 193);
+    --cor_roxo: rgb(22, 3, 3);
+    --cor_black: rgb(61, 1, 1);
+    --cor_secund: rgb(171, 230, 187);
+}
+
+/*--cor_principal: rgb(17, 207, 17);
+    --cor_basic: rgb(216, 255, 193);
+    --cor_roxo: rgb(5, 22, 3);
+    --cor_black: rgb(10, 71, 2);*/
+
+
 body{
     font-family:'Cardo', serif;
+    background-color: var(--cor_roxo);
+    color: var(--cor_basic);
+    height: 300vh;
     overflow-x: hidden;
     /*
     quando criar para baixo coloque
@@ -17,6 +35,7 @@ body{
 
 .cabecalho .carrinhoVazio{
     width: 50px;
+    
 }
 
 .cabecalho .botoes-menu{
@@ -26,10 +45,10 @@ body{
     height: 100%;
 }
 .cabecalho nav ul li a{
-    font-weight: 700;
+    font-weight: 700; /*negrito*/
     padding: 10px 20px;
-    background-color: rgb(17, 207, 17);
-    color: #ffffff;
+    background-color: var(--cor_principal);
+    color: var(--cor_basic);
     font-size: 19px; /*tamanho da letra*/
     border-radius: 50px; /*aredondar bordas*/
     
@@ -37,39 +56,364 @@ body{
 
 .cabecalho nav ul li a:hover{
 
-    background-color: #ffffff;
-    color: rgb(19, 119, 19);
+    background-color: var(--cor_basic);
+    color: var(--cor_principal);
     cursor: pointer;/*maosinha ao se aprosimar do botao*/
     transform: scale(1.1);
     transition: 0.8s all ease-in-out;/*animação sinha*/
 }
 
 .fundo{
-    z-index: -1;
+    
+    z-index: -2;
     position: absolute;
+
+    width: 100%;
 }
 
 .fundo .imagFundo{
 
-    position: absolute; 
+
 	left: 0px; /* posiciona a 90px para a esquerda */ 
 	top: calc( 100px - 25px); /* posiciona a 70px para baixo */
 
     width: calc( 100vh - 80px); /*vh = tela do usuario*/
+    height: 100vh;
     
 }
 .fundo .imagCima{
-
-    position: absolute ; 
-    left: 750px;
-	top: 0px; /* posiciona a 70px para baixo */
-
-    width: calc( 100vh - 80px); /*vh = tela do usuario*/
+    height:calc(100vh ) ;
+    float: right;
+    width: 100vh; /*vh = tela do usuario*/
     
 }
+
+
 .nome {
-    padding: 200px 0px 0px 0px;
-    /*altura  , direita, baixo , esquerda*/
-    font-size: 60px; /*tamanho da letra*/
+    width: 100%;
+    height: 110%;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+    position: absolute;
+    z-index: -1;
+        
 
 }
+
+.p_ki{
+    
+    color: white;
+    font-size: 60px; 
+    margin-top: 20%;
+}
+
+
+
+/*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*/
+/*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*//*main*/
+
+/*informaçoes de pagamentos*//*informaçoes de pagamentos*//*informaçoes de pagamentos*//*informaçoes de pagamentos*/
+/*informaçoes de pagamentos*//*informaçoes de pagamentos*//*informaçoes de pagamentos*//*informaçoes de pagamentos*/
+
+
+main{
+    margin-top: 40vh;
+}
+
+.Pagamentos{
+    color: var(--cor_basic);
+    padding-top: 10vh;
+    background-color: var(--cor_roxo);
+    margin-top: 45%;
+
+
+}
+
+#conteine-de-divs{
+    display: flex;
+    margin-right: 60px;
+    margin-left: 60px;
+    justify-content: space-around;
+}
+
+#div_pagamentos{
+
+    
+    width: 260px;
+    padding: 10vh;
+    background-color: var(--cor_black);
+    margin: 20px;
+    border-radius: 26px;
+    
+
+}
+
+#div_pagamentos:hover{
+    cursor: pointer;
+    background-color: var(--cor_black);
+    
+}
+
+.mei{
+    animation-name: balancoMei;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+.lat{
+    animation-name: balancoLat;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes balancoMei{
+    0%{
+        transform: translate3d(0,0,0);
+
+    }
+
+    50%{
+        transform: translate3d(-10px,-10px,0);
+    }
+    100%{
+        transform: translate3d(0,0,0);
+    }
+
+}
+@keyframes balancoLat{
+    0%{
+        transform: translate3d(0,0,0);
+
+    }
+
+    50%{
+        transform: translate3d(10px,-10px,0);
+        
+    }
+
+    to{
+        transform: translate3d(0,0,0);
+    }
+
+}
+
+.h3_pagamentos{
+
+    text-align: center;
+    margin-top: -20px;
+}
+.div_cartao_bandeiras{
+
+    margin-right: -10px;
+    display: flex;
+}
+
+.div_cartao_bandeiras .i{
+    
+    
+    margin-bottom: -30px;
+    padding: 10px 0 0 10px;
+    font-size: 30px;
+}
+
+
+/*RESposta do clic nos recebidos*//*RESposta do clic nos recebidos*//*RESposta do clic nos recebidos*//*RESposta do clic nos recebidos*/
+/*RESposta do clic nos recebidos*//*RESposta do clic nos recebidos*//*RESposta do clic nos recebidos*//*RESposta do clic nos recebidos*/
+/*RESposta do clic nos recebidos*//*RESposta do clic nos recebidos*//*RESposta do clic nos recebidos*//*RESposta do clic nos recebidos*/
+
+
+#produto-De-Pagamento{
+    color: var(--cor_basic);
+    display: none;
+    background-color: var(--cor_roxo);
+    margin: 10vh;
+    border-radius: 20px;
+    border: 3px var(--cor_black) solid;
+    height: 40vh;
+    
+    
+}
+
+
+.pix_QRcode_Telefone{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pix_telefone, .pix_QRcode{
+    margin: 20px;
+}
+
+.li_pix{
+    display: flex;
+}
+
+.img_qrcod{
+    border-radius: 15px;
+    width: 20vh;
+    margin-left: 25%;
+    
+    
+    
+}
+.nome1, .nome2{
+    font-size: 18px;
+    padding: 10px;
+    
+}
+
+.h3_produto{
+    text-align: center; 
+    font-size: 30px;
+}
+
+.produto_cartao{
+    padding-left: 20px;
+
+}
+.lu_pix{
+    padding: 20px;
+}
+.pedido{
+    color: var(--cor_principal);
+}
+/*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*/
+/*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*/
+/*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*//*Carrossel*/
+
+.carrossel{
+    
+    margin-top: 30vh;
+    background-color: var(--cor_black);
+
+}
+
+
+.div_carrossel{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
+.img_carrossel{
+    width: 50vh;
+    margin: 20px;
+    border-radius: 30px;
+}
+
+
+.img_carrossel:hover{
+    transform: scale(1.05);
+    transition: 0.8s all ease-in-out;/*animação sinha*/
+}
+
+
+
+/*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*/
+/*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*/
+/*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*//*sobrer*/
+
+
+
+.sobre{
+    margin-top: 10%;
+}
+
+.fundo_titou_sobre{
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: var(--cor_black);
+    color: var(--cor_basic);
+    margin-bottom: 5%; 
+
+}
+
+.titou_sobre{
+    text-align: center; 
+    font-size: 5vh;
+}
+
+
+.texto{
+    text-align: justify;
+    margin: 0 50px 0 30px;
+    font-size: 3.5vh;
+
+}
+
+.img_lado_text_sobre{
+    width: 90vh;
+    margin: 20px;
+    border-radius: 60px;
+    border: 5px rgb(4, 82, 4) ;
+    border-style: double;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*/
+/*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*/
+/*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*/
+
+
+footer{
+    margin-top: 2%;
+    background-color: var(--cor_roxo);
+    color:var(--cor_basic);
+    
+}
+
+.footer_ul{
+    display: flex;
+    padding-top: 2%;
+
+}
+footer ul{
+    margin-right: 45%;
+    margin-left: 45%;
+    
+}
+
+footer ul li{
+    margin: 10%;
+    
+}
+#footer_i{
+    
+    font-size: 30px;
+    color:var(--cor_basic);
+}
+
+#footer_i:hover{
+    
+    font-size: 30px;
+    color:green;
+    
+}
+.developer{
+    padding-top: 2%;
+}
+.developer:hover{
+    color: var(--cor_principal);
+}
+
