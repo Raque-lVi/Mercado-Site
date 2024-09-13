@@ -1,0 +1,122 @@
+<!-- register -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>CADASTRO</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../src/css/StyleLogin.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+
+    <script src="https://kit.fontawesome.com/635a4f23de.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- Script para abrir e fechar o menu lateral -->
+    <script>
+        function abrirMenu() {
+            var menuLateral = document.querySelector('.menu-lateral');
+            menuLateral.classList.toggle('aberto');
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a href="./carrinho">
+            <!-- o objetivo aqui é fazer com que quando a pessoa faça compras o carrinho fique
+            cheio e quand ela não efetuou a compra o carrinho fica vazio-->
+            <img class="carrinhoVazio" src="../src/Imagem/carrinho-de-compras-de-design-xadrez.png"
+                alt="carrinho de compras">
+
+            <!-- se (pesquisa no banco de dados pelos produtos de compra == não efetuada compra 
+                    porem produtos no carrinho para possivel compra){
+                    imagem de carrinho cheio.setVisible()
+                    }else{imagem de carrinho vasio.setVisible}
+                -->
+        </a>
+
+        <!--Botoes do cabeçario-->
+
+        <nav>
+            <ul class="botoes-menu">
+
+                <!-- <li> <a href="#""> QUEM SOMOS?</a></li> -->
+
+                <li> <a href=" ./vendas"> PRODUTOS </a></li>
+
+                <li> <a href="./login"> ENTRE </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+
+
+
+    <section style="padding-top: 40px;">
+        <center>
+            <form class="formulario">
+                <legend class="labCadastro">CADASTRO</legend>
+                <br><br>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome"  placeholder="Seu Nome" class="Text" aria-label="Nome" aria-describedby="nomeHelp">
+                
+                <br><br>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="Seu Email" id="email" class="Text" aria-label="E-mail"
+                    aria-describedby="emailHelp">
+
+                <br><br>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" placeholder="Sua Senha" id="senha" class="Text" aria-label="Senha"
+                    aria-describedby="senhaHelp">
+
+                <br><br>
+                <label for="confirmarSenha">Confirmar Senha:</label>
+                <input type="password" placeholder="Sua Senha Novamente" name="confirmarSenha" id="confirmarSenha" class="Text"
+                    aria-label="Confirmar Senha" aria-describedby="confirmarSenhaHelp">
+
+                <br><br>
+                <input type="submit" name="Cadastrar" value="Cadastrar" class="botao">
+            </form>
+            <p id="erroCadastro" class="erro">Erro: Não foi possível cadastrar</p>
+        </center>
+    </section>
+
+
+
+    <footer>
+        <hr>
+        <center>
+            <ul class="footer_ul">
+                <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-solid fa-location-dot"></i></a></li>
+            </ul>
+            <p class="developer">Made by developer Vivian, Pão Na Chapa, Rômulo, Wellington</p>
+            <ul style="display: flex;">
+                <li><a href="https://raque-lvi.github.io/Curriculo_onlin/">
+                        <p id="footer_i" style="font-size: 20px;"> Web </p>
+                    </a></li>
+                <li> <a href="https://github.com/Raque-lV"><i id="footer_i" class="fa-brands fa-github"></i></a></li>
+            </ul>
+
+        </center>
+    </footer>
+
+
+</body>
+
+</html>

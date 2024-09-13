@@ -1,0 +1,252 @@
+
+:root{
+    --cor_principal: rgb(196, 43, 43);
+    --cor_basic: rgb(216, 255, 193);
+    --cor_roxo: rgb(22, 3, 3);
+    --cor_black: rgb(61, 1, 1);
+    --cor_secund: rgb(171, 230, 187);
+}
+
+
+body{
+    font-family:'Cardo', serif;
+    background-color: var(--cor_black);
+    color: var(--cor_principal);
+    
+    overflow-x: hidden;
+    /*
+    quando criar para baixo coloque
+    overflow-y: scroll;
+    */
+}
+
+
+
+
+
+
+
+
+
+
+/* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO */
+/* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO */
+/* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO *//* CABECALHO */
+
+
+
+
+.cabecalho{
+
+    display: flex;
+    padding: 10px 30px 10px 30px;
+    /*altura  , direita, baixo , esquerda*/
+    justify-content: space-between;
+}
+
+.cabecalho .carrinhoVazio{
+    width: 50px;
+    
+}
+
+.cabecalho .botoes-menu{
+
+    display: flex; 
+    align-items: center;
+    height: 100%;
+}
+.cabecalho nav ul li a{
+    font-weight: 700; /*negrito*/
+    padding: 10px 20px;
+    /* background-color: var(--cor_principal); */
+    color: var(--cor_basic);
+    font-size: 19px; /*tamanho da letra*/
+    border-radius: 50px; /*aredondar bordas*/
+    
+}
+
+.cabecalho nav ul li a:hover{
+
+    background-color: var(--cor_basic);
+    color: var(--cor_principal);
+    cursor: pointer;/*maosinha ao se aprosimar do botao*/
+    transform: scale(1.1);
+    transition: 0.8s all ease-in-out;/*animação sinha*/
+}
+
+
+.nome {
+    width: 100%;
+    height: 110%;
+    background-color: rgba(0, 0, 0, 0.568);
+    color: white;
+    position: absolute;
+    z-index: -1;
+        
+
+}
+
+.p_ki{
+    
+    color: white;
+    font-size: 60px; 
+    margin-top: 20%;
+}
+
+
+
+hr{
+    color: var(--cor_basic);
+}
+
+
+
+
+
+/* Login *//* Login *//* Login *//* Login *//* Login *//* Login *//* Login *//* Login *//* Login */
+/* Login *//* Login *//* Login *//* Login *//* Login *//* Login *//* Login *//* Login *//* Login */
+/* Login *//* Login *//* Login *//* Login *//* Login *//* Login *//* Login *//* Login *//* Login */
+
+/* styleLogin.css */
+.formulario {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.labAutent {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.Text {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--cor_roxo);
+    border-radius: 5px;
+    color: var(--cor_principal);
+    font-size: 15px;
+    width: 20vw;
+}
+
+.botao {
+    padding: 10px 20px;
+    background-color: var(--cor_roxo);
+    color: var(--cor_basic);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.botao:hover {
+    background-color: var(--cor_black);
+}
+
+.social-login {
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-login:hover {
+    background-color: #ddd;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.recuperar-senha{
+    color: red;
+}
+
+/* Media Queries para dispositivos móveis */
+@media (max-width: 600px) {
+    .cabecalho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cabecalho nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
+/*Cadastrar*/
+.erro{
+    display: none;
+}
+
+
+
+/*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*/
+/*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*/
+/*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*//*Footer*/
+
+
+footer{
+    margin-top: 5%;
+    background-color: var(--cor_roxo);
+    color:var(--cor_basic);
+    
+}
+
+.footer_ul{
+    display: flex;
+    padding-top: 2%;
+
+}
+footer ul{
+    margin-right: 45%;
+    margin-left: 45%;
+    
+}
+
+footer ul li{
+    margin: 10%;
+    
+}
+#footer_i{
+    
+    font-size: 30px;
+    color:var(--cor_basic);
+}
+
+#footer_i:hover{
+    
+    font-size: 30px;
+    color:green;
+    
+}
+.developer{
+    padding-top: 2%;
+}
+.developer:hover{
+    color: var(--cor_principal);
+}
+
+

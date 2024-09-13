@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kitanda do Vitor</title>
+  <link rel="stylesheet" href="../src/css/styleGaleria.css" />
+  <link rel="stylesheet" href="../src/css/StyleLogin.css" />
+  <link rel="stylesheet" href="../src/css/reset.css">
+
+  <script src="https://kit.fontawesome.com/635a4f23de.js" crossorigin="anonymous"></script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <Script src="../src/js/scriptRomulo.js"></Script>
+</head>
+
+<body>
+  <header class="cabecalho">
+    <a href="./carrinho">
+      <img class="carrinhoVazio" src="../src/Imagem/carrinho-de-compras-de-design-xadrez.png" alt="carrinho de compras">
+    </a>
+
+    <!--Botoes do cabeçario-->
+
+    <nav>
+      <ul class="botoes-menu">
+
+        <!-- <li> <a href="#""> QUEM SOMOS?</a></li> -->
+
+        <li> <a href=" ./vendas"> PRODUTOS </a></li>
+
+        <li> <a href="./cadastro"> CADASTRAR </a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <hr>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Frutas Frescas e Saudáveis</h2>
+      <p>Explore a nossa seleção de frutas frescas e de alta qualidade.</p>
+    </div>
+  </section>
+
+  <main>
+    <section id="products" class="products">
+      <div class="container">
+        <h2>Nossos Produtos</h2>
+        <div class="product-grid">
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/abacaxi.jfif" alt="Abacaxi" />
+            <h3>Abacaxi</h3>
+            <p>R$ 7,50 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/batata.jfif" alt="Batata" />
+            <h3>Batata</h3>
+            <p>R$ 5,00 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/apples-5567884_640.jpg" alt="Maçã" />
+            <h3>Maçã</h3>
+            <p>R$ 5,00 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/banana-2449019_640.jpg" alt="Banana" />
+            <h3>Banana</h3>
+            <p>R$ 3,00 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/laranja.jfif" alt="Laranja" />
+            <h3>Laranja</h3>
+            <p>R$ 4,00 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/beterraba.jpg" alt="Beterraba" />
+            <h3>Beterraba</h3>
+            <p>R$ 4,50 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/melancia.jpg" alt="Melancia" />
+            <h3>Melancia</h3>
+            <p>R$ 5,50 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/cebola.jfif" alt="Cebola" />
+            <h3>Cebola</h3>
+            <p>R$ 4,50 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/cenoura.jfif" alt="Cenoura" />
+            <h3>Cenoura</h3>
+            <p>R$ 7,00 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/maracuja.jfif" alt="Maracujá" />
+            <h3>Maracujá</h3>
+            <p>R$ 4,30 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/morangos-maior.jpg" alt="Morangos" />
+            <h3>Morangos</h3>
+            <p>R$ 6,00 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/repolho.jfif" alt="Repolho" />
+            <h3>Repolho</h3>
+            <p>R$ 6,50 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/tomate.jfif" alt="Tomate" />
+            <h3>Tomate</h3>
+            <p>R$ 4,00 por kg</p>
+          </div>
+          <div class="product-item">
+            <img src="../src/Imagem/mercadoria/uva.jfif" alt="Uva" />
+            <h3>Uva</h3>
+            <p>R$ 5,50 por kg</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contato</h2>
+        <form>
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <center><button type="submit">Enviar</button></center>
+          <div class="success-message" style="display: none">
+            Mensagem enviada com sucesso!
+          </div>
+          <div class="error-message" style="display: none">
+            Por favor, preencha todos os campos.
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <section id="carousel" class="carousel">
+    <img id="img1" src="../src/Imagem/mercadoria/uva.jfif" alt="Imagem 1" />
+    <img id="img2" src="../src/Imagem/mercadoria/tomate.jfif" alt="Imagem 2" />
+    <img id="img3" src="../src/Imagem/mercadoria/repolho.jfif" alt="Imagem 3" />
+  </section>
+  <footer>
+    <hr>
+    <center>
+      <ul class="footer_ul">
+        <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-brands fa-whatsapp"></i></a></li>
+        <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-brands fa-instagram"></i></a></li>
+        <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-solid fa-location-dot"></i></a></li>
+      </ul>
+      <p class="developer">Made by developer Vivian, Pão Na Chapa, Rômulo, Wellington</p>
+      <ul style="display: flex;">
+        <li><a href="https://raque-lvi.github.io/Curriculo_onlin/">
+            <p id="footer_i" style="font-size: 20px;"> Web </p>
+          </a></li>
+        <li> <a href="https://github.com/Raque-lV"><i id="footer_i" class="fa-brands fa-github"></i></a></li>
+      </ul>
+
+    </center>
+  </footer>
+
+</body>
+
+</html>

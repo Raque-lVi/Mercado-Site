@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <title>KITANDA DO VITOR</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/Style.css">
+
+    <script src="https://kit.fontawesome.com/635a4f23de.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="../src/js/script.js" defer></script>
+
+
+
+</head>
+
+<body>
+
+    <!--Fundo 1 // desing de dois tringulos em foto-->
+
+    <div class="fundo" style="display: none;">
+
+        <img class="imagFundo" src="../src/Imagem/triangulo-reto (1).png" alt="Desine de fundo">
+        <img class="imagCima" src="../src/Imagem/triangulo-reto-cima.png" alt="Desine de fundo">
+    </div>
+    
+
+
+    <!--Fundo 2 //foto de morangos-->
+
+
+    <div>
+        
+        <div class="fundo">
+
+            <img  src="../src/Imagem/mercadoria/morangos-maior.jpg" alt="Desine de fundo" style="width: 210vh;">
+        </div>
+        <!--NOME DE FUNDO E CURTINA--><!--NOME DE FUNDO E CURTINA--><!--NOME DE FUNDO E CURTINA-->
+
+        <center>
+            <div class="nome">
+                <p class="p_ki" >
+                    KITANDA DO VITOR
+                </p>
+            </div>
+        </center>
+    </div>
+
+
+    <!--CABEÇARIO--><!--CABEÇARIO--><!--CABEÇARIO--><!--CABEÇARIO--><!--CABEÇARIO--><!--CABEÇARIO-->
+
+
+    <header class="cabecalho">
+        <a href="./carrinho">
+            <!-- o objetivo aqui é fazer com que quando a pessoa faça compras o carrinho fique
+            cheio e quand ela não efetuou a compra o carrinho fica vazio-->
+            <img class="carrinhoVazio" src="../src/Imagem/carrinho-de-compras-de-design-xadrez.png"
+                alt="carrinho de compras" >
+
+            <!-- se (pesquisa no banco de dados pelos produtos de compra == não efetuada compra 
+                    porem produtos no carrinho para possivel compra){
+                    imagem de carrinho cheio.setVisible()
+                    }else{imagem de carrinho vasio.setVisible}
+                -->
+        </a>
+
+        <!--Botoes do cabeçario-->
+
+        <nav>
+            <ul class="botoes-menu">
+
+                <!-- <li> <a href="#""> QUEM SOMOS?</a></li> -->
+
+                <li> <a href="./vendas"> PRODUTOS </a></li>
+
+                <li> <a href="./login"> ENTRE </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+
+    <!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN-->
+    <!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN--><!--MAIN-->
+
+
+    <main>
+
+        
+
+        <section class="Pagamentos"> <!--section 1 // informaçoes de pagamentos-->
+            <h1 style="text-align: center; margin-bottom: 10px; ">PAGAMENTO:</h1>
+
+            <!--Caixas com informaçoes de pagamentos-->
+
+            <div id="conteine-de-divs">
+
+                <div id="div_pagamentos" class="lat">
+                    <h3 class="h3_pagamentos">PIX</h3>
+                </div>
+                <div id="div_pagamentos" class="mei">
+                    <h3 class="h3_pagamentos">DINHEIRO</h3>
+                </div>
+                <div id="div_pagamentos" class="lat">
+
+                    <h3 class="h3_pagamentos">CARTÃO</h3>
+
+                    <!--icones de bandeira dos cartoes-->
+                    <div class="div_cartao_bandeiras">
+
+                        <a href="" class="i"><i class="fa-brands fa-cc-mastercard" style="color: #42c449;"></i></a>
+                        <a href="" class="i"><i class="fa-brands fa-cc-visa" style="color: #42c449;"></i></a>
+                        <a href="" class="i"><i class="fa-brands fa-cc-amex" style="color: #42c449;"></i></a>
+                        <p style="font-size: 20px; padding: 10px;">...</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="produto-De-Pagamento"> <!--section 2 // Detalhes das informaçoes de pagamento + pix-->
+
+
+            <div style="border: 3px black solid; border-left: none; border-bottom: none; border-top: none;">
+
+                <h3 class="h3_produto">Pix</h3>
+
+                <!--pix-->
+
+                <div class="pix_QRcode_Telefone">
+                    <ul class="pix_telefone">
+
+                        <li class="li_pix">
+                            <p class="nome1">Chave: </p>
+                            <p class="nome2" title="Telefone"> (84) 996247885 </p>
+                        </li>
+                        <li class="li_pix">
+                            <p class="nome1">Nome: </p>
+                            <p class="nome2"> Manoel Vitoriano Dantas </p>
+                        </li>
+                    </ul>
+
+                    <ul class="pix_QRcode">
+                        <li class="li_pix"><img class="img_qrcod" src="../src/Imagem/qrcod.png" alt=""></li>
+                        <li class="li_pix">
+                            <p class="nome1">Nome: </p>
+                            <p class="nome2"> Vivian Raquel Batista Dantas</p>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <!--Pagamento por cartao-->
+
+            <div class="produto_cartao">
+                <h3 class="h3_produto">CARTÃO</h3>
+                <ul class="lu_pix">
+                    <li class="li_pix">
+                        <p class="nome1">Maquininha: </p>
+                        <p class="nome2">Ton</p>
+                    </li>
+                    <li class="li_pix">
+                        <p class="nome1">Bandeiras Aceitas: </p>
+<p style="white-space: pre-wrap;" class="nome2">
+MasterCard, HiperCard
+Visa, Amex
+Elo
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <a href="">
+            <h3 class="pedido" style="text-align: center; text-transform: uppercase; padding-top: 20px; ">Faça Ja o Seu Pedido!!</h3>
+        </a>
+
+        <section class="carrossel"> <!--Section 3 // mini carrossel de imagens-->
+            <div class="div_carrossel">
+                <div class="div_img"><a href="./galeria"><img class="img_carrossel" id="img1"
+                            src="../src/Imagem/mercadoria/uva.jfif" alt=""></a></div>
+                <div class="div_img"><a href="./galeria"><img class="img_carrossel" id="img2"
+                            src="../src/Imagem/mercadoria/tomate.jfif" alt=""></a></div>
+                <div class="div_img"><a href="./galeria"><img class="img_carrossel" id="img3"
+                            src="../src/Imagem/mercadoria/repolho.jfif" alt=""></a></div>
+            </div>
+        </section>
+
+        <section class="sobre"> <!--Section 4 // Sobre-->
+
+            <div class="fundo_titou_sobre">
+                <h2 class= "titou_sobre">QUEM SOMOS?</h2>
+            </div>
+            <p class="texto">A Kitanda do Vitor é um mercado localizado no bairro Tranquedo Neves em Cerro Cora RN. Esse
+                mercado é conhecido pelo baixo preço e boa qualidade dos produtos que muitas vezes são adquiridos de
+                agricultores e pastores (cuidadores de animais para consumo) locais. Vendemos frutas, verduras,
+                hortaliças, carnes congeladas, carnes frescas e alimentos não perecíveis. Porém, nossa mercadoria mais
+                requisitada é as que provém da agricultura.</p>
+            
+            <h2 class="titou_sobre" style="margin: 30px; font-size: 30px; color: rgb(4, 82, 4) ;">AGRICULTURA</h2>
+            <div style="display: flex;">
+                <p class="texto">
+                    A Kitanda do Vitor foi fundada por um agricultor, portanto pensamos e buscamos preservar principalmente a mercadoria
+                    local de nossa cidade afim de incentivar e ajudar o pequeno agricultor desta. Porém também buscamos novas oportunidades
+                    de bons preços e produtos de qualidade, fora da cidade, com o fim de trazer para o interior do Rio Grande do Norte
+                    oportunidades vindas de fora de Cerro Cora
+                </p>
+                <img class="img_lado_text_sobre" src="../src/Imagem/mercadoria/batata.jfif" alt="">
+
+                <!--essa imagem sera composta de imagens do sitio e ela ficara passando, como um carrosel de uma unica
+                imagem-->
+            </div>
+
+        </section>
+
+
+        <!--section 5 // Localização-->
+
+        <section>
+            
+            <div class="fundo_titou_sobre">
+                <h2 class= "titou_sobre">Localização</h2>
+            </div>
+
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.720892107774!2d-36.35041462490607!3d-6.03298969395255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b1c190a8a3595f%3A0x7dc11f6251b95b14!2sKitanda%20do%20Vitor!5e0!3m2!1spt-BR!2sbr!4v1720469572675!5m2!1spt-BR!2sbr" width="500" height="400" style="border:4px rgb(32, 44, 26) solid; border-radius: 30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <a class="mensagem" href=""><h2>Enviar Mensagem</h2></a>
+            </div>
+
+            
+        </section>
+
+    </main>
+
+
+    <!--
+
+localização do mercado junto com fotos 
+
+links para instagram, facebook e app (quando for postado)
+
+receitas (futuro bem futuro)
+
+ -->
+
+
+<!--footer--><!--footer--><!--footer--><!--footer--><!--footer--><!--footer--><!--footer--><!--footer-->
+<!--footer--><!--footer--><!--footer--><!--footer--><!--footer--><!--footer--><!--footer--><!--footer-->
+
+
+    <footer>
+        <hr color="red">
+        <center>
+            <ul class="footer_ul">
+                <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-solid fa-location-dot"></i></a></li>
+            </ul>
+            <p class="developer">Made by developer Vivian, Pão Na Chapa, Rômulo, Wellington</p>
+            <ul style="display: flex;">
+                <li><a href="https://raque-lvi.github.io/Curriculo_onlin/"><p id="footer_i" style="font-size: 20px;"> Web </p></a></li>
+                <li > <a href="https://github.com/Raque-lVi"><i id="footer_i" class="fa-brands fa-github"></i></a></li>
+            </ul>
+        
+        </center>
+    </footer>
+
+
+
+</body>
+
+</html>
