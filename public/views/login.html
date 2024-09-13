@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>LOGIN</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../src/css/StyleLogin.css">
+    <link rel="stylesheet" href="../src/css/reset.css">
+
+    <script src="https://kit.fontawesome.com/635a4f23de.js" crossorigin="anonymous"></script>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <a href="./carrinho">
+            <img class="carrinhoVazio" src="../src/Imagem/carrinho-de-compras-de-design-xadrez.png"
+            alt="carrinho de compras">
+        </a>
+
+        <!--Botoes do cabeçario-->
+
+        <nav>
+            <ul class="botoes-menu">
+
+                <!-- <li> <a href="#""> QUEM SOMOS?</a></li> -->
+
+                <li> <a href=" ./vendas"> PRODUTOS </a></li>
+
+                <li> <a href="./cadastro"> CADASTRAR </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <hr>
+
+
+    <br><br><br><br>
+    <section class="login-section">
+        <form class="formulario" id="loginForm" role="form">
+            <fieldset>
+                <legend class="labAutent">AUTENTICAÇÃO</legend>
+                <br><br>
+                <label for="loginText" class="visually-hidden">Login:</label>
+                <input  type="text" name="loginText" id="loginText" placeholder="Usuario" class="Text" aria-label="Digite seu login" required>
+                <br><br>
+                <label for="senhaText" class="visually-hidden">Senha:</label>
+                <input type="password" name="senhaText" id="senhaText" placeholder="Senha" class="Text" aria-label="Digite sua senha"
+                    required>
+                <br><br>
+                <input type="checkbox" id="lembrar" name="lembrar">
+                <label for="lembrar">Lembrar-me</label>
+                <br><br>
+                <input type="submit" name="Enviar" class="botao">
+                <br><br>
+                <br><br>
+                <a href="./cadastro" class="recuperar-senha"> Não tem Cadastro? </a>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <hr>
+        <center>
+            <ul class="footer_ul">
+                <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-brands fa-whatsapp"></i></a></li>
+                <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-brands fa-instagram"></i></a></li>
+                <li class="footer_ul_li"><a href=""><i id="footer_i" class="fa-solid fa-location-dot"></i></a></li>
+            </ul>
+            <p class="developer">Made by developer Vivian, Pão Na Chapa, Rômulo, Wellington </p>
+            <ul style="display: flex;">
+                <li><a href="https://raque-lvi.github.io/Curriculo_onlin/">
+                        <p id="footer_i" style="font-size: 20px;"> Web </p>
+                    </a></li>
+                <li> <a href="https://github.com/Raque-lVi"><i id="footer_i" class="fa-brands fa-github"></i></a></li>
+            </ul>
+
+        </center>
+    </footer>
+
+
+</body>
+
+</html>

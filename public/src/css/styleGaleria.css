@@ -1,0 +1,157 @@
+
+
+
+:root{
+    --cor_principal: rgb(196, 43, 43);
+    --cor_basic: rgb(216, 255, 193);
+    --cor_roxo: rgb(22, 3, 3);
+    --cor_black: rgb(61, 1, 1);
+    --cor_secund: rgb(171, 230, 187);
+    --cor_verde: rgb(58, 136, 13);
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    color: var(--cor_verde) ;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+
+.hero p {
+    font-size: 1.25rem;
+}
+
+
+.products {
+    padding: 2rem 0;
+}
+
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+
+.product-item {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    padding: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.product-item img {
+    border-radius: 8px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.product-item h3 {
+    margin: 0.5rem 0;
+}
+
+
+.contact {
+    padding: 2rem 0;
+}
+
+
+.contact h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff; /* Fundo branco para o formulário */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+form label {
+    display: block;
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: var(--cor_principal);
+    font-size: 20px;
+}
+
+
+form input:focus, form textarea:focus {
+    outline: 2px solid var(--cor_principal); /* Borda vermelha ao focar */
+    border-color: var(--cor_roxo);
+}
+
+
+form button {
+    background-color: var(--cor_black); /* Fundo vermelho para o botão */
+    color: white;
+    border: none;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+
+form button:hover {
+    background-color: var(--cor_principal); /* Tom vermelho mais escuro ao passar o mouse */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel img {
+    width: 33.33%;
+    transition: opacity 1s ease-in-out;
+}
