@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap" rel="stylesheet">
 
 
-
 </head>
 
 <body>
@@ -47,7 +46,7 @@
 
     <br><br><br><br>
     <section class="login-section">
-        <form class="formulario" id="loginForm" role="form">
+        <form action="api/pessoas" method="post" class="formulario" id="loginForm" role="form">
             <fieldset>
                 <legend class="labAutent">AUTENTICAÇÃO</legend>
                 <br><br>
@@ -55,8 +54,7 @@
                 <input  type="text" name="loginText" id="loginText" placeholder="Usuario" class="Text" aria-label="Digite seu login" required>
                 <br><br>
                 <label for="senhaText" class="visually-hidden">Senha:</label>
-                <input type="password" name="senhaText" id="senhaText" placeholder="Senha" class="Text" aria-label="Digite sua senha"
-                    required>
+                <input type="password" name="senhaText" id="senhaText" placeholder="Senha" class="Text" aria-label="Digite sua senha">
                 <br><br>
                 <input type="checkbox" id="lembrar" name="lembrar">
                 <label for="lembrar">Lembrar-me</label>
@@ -87,8 +85,6 @@
 
         </center>
     </footer>
-
-
 </body>
 
 </html>
