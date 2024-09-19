@@ -6,7 +6,7 @@
 
 const mongoose = require('mongoose')
 
-const uRLBanco = 'mongodb+srv://vivianraquel:itaborai@cluster0.gd0q71n.mongodb.net/mercado'
+const uRLBanco = "mongodb+srv://vivianraquel:itaborai@cluster0.gd0q71n.mongodb.net/mercado?retryWrites=true&w=majority&appName=Cluster0"
 
 
 mongoose.connect(uRLBanco, {})
